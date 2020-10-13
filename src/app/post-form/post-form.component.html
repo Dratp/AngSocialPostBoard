@@ -1,0 +1,10 @@
+<div>
+    <button (click)="hideForm()">New Thought</button>
+    <form [ngClass]="{'visibile':isVisible}">
+        Title <br />
+        <input type="text"/><br />
+        Thought <br />
+        <input type="text" /><br />
+        <button class="PostButton">Post</button>
+    </form>
+</div>
