@@ -1,7 +1,8 @@
 <div>
     <h1>Thoughts</h1>
-    <app-post-form (callParent)="addPost"></app-post-form>
+    <app-post-form (callParent)="addPost($event)"></app-post-form>
     <app-post *ngFor="let post of posts"
-    [post]="post">
+    [post]="post"
+    (callParent)="deletePost($event)">
     </app-post>
 </div>

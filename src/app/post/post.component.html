@@ -1,7 +1,9 @@
 <div style="border: 2px solid blue">
     <br />
-    &nbsp;{{post.title}} <br />
-    &nbsp;{{post.thought}}
-    <button>delete</button>
+    &nbsp;Title: <br />
+    &nbsp;<textarea>{{post.title}}</textarea><br /><br />
+    &nbsp;Thought<br />
+    &nbsp;<textarea rows="2" cols="90">{{post.thought}}</textarea>
+    <button style="Float: right;" (click)="del()">delete &nbsp;</button>
     <br /><br />
 </div>

@@ -1,0 +1,26 @@
+button{
+    position: relative;
+    width: 180px;
+    height: 60px;
+    color: #fff;;
+    text-decoration: none;
+    text-transform: uppercase;
+    line-height: 60px;
+    letter-spacing: 2px;
+    margin: 20px;
+    transition: 0.5s;
+}
+button:hover{
+    background: #ec0b35 url(pixel.png);
+    background-size: 180px;
+    transition-delay: 0.8s;
+    animation: animate 0.8s steps(8) forwards;
+}
+@keyframes animate{
+    0%{
+        background-position: 0px;
+    }
+    100%{
+        background-position: -480px
+    }
+}

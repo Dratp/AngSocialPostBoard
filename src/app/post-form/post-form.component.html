@@ -1,10 +1,13 @@
 <div>
     <button (click)="hideForm()">New Thought</button>
-    <form [ngClass]="{'visibile':isVisible}">
-        Title <br />
-        <input type="text"/><br />
-        Thought <br />
-        <input type="text" /><br />
-        <button class="PostButton">Post</button>
-    </form>
+    <div [ngClass]="{'visibile':isVisible}">
+        <div class="addbox">
+            <p>Title</p>
+            <input [(ngModel)]="title" />
+            <p>Thought</p>
+            <textarea  rows="4" cols="50" [(ngModel)]="thought"></textarea>
+                <br />
+            <button (click)="newPost()" class="PostButton">Post</button>
+        </div>
+    </div>
 </div>

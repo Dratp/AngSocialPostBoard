@@ -15,8 +15,15 @@ export class SocialPostsComponent implements OnInit {
     {title: 'Second', thought: 'Two are better than 1'}
   ];
 
-  addPost(newTitle, newThought){
-    this.posts.push({title: newTitle, thought: newThought});
+  addPost(post: Post){
+    console.log(`social post received ${post.title}, ${post.thought}`)
+    this.posts.reverse();
+    this.posts.push({title: post.title, thought: post.thought});
+    this.posts.reverse();
+  }
+
+  deletePost(post:Post){
+    this.posts = this.posts.filter(p => p.thought !== post.thought);
   }
 
   ngOnInit(): void {
