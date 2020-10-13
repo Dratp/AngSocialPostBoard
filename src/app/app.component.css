@@ -11,7 +11,7 @@ button{
     transition: 0.5s;
 }
 button:hover{
-    background: #ec0b35 url(pixel.png);
+    background: #ec0b35; 
     background-size: 180px;
     transition-delay: 0.8s;
     animation: animate 0.8s steps(8) forwards;
